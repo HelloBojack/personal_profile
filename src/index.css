@@ -21,3 +21,9 @@ body {
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
+
+@layer components {
+  .phrase {
+    background: linear-gradient(currentColor, currentColor) bottom left / 0 .1em no-repeat;
+  }
+}
