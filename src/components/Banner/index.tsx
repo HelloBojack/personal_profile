@@ -20,8 +20,6 @@ export const Banner = () => {
   const onScreen = useOnScreen(ref);
   const onScreen2 = useOnScreen(ref2);
 
-  console.log(onScreen);
-
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -66,11 +64,12 @@ export const Banner = () => {
     >
       <div className="container mx-auto flex items-center">
         <div
-          className={
-            onScreen
-              ? "transition-opacity ease-in duration-700 opacity-100 flex-1"
-              : "opacity-0"
-          }
+          className={`flex-1
+           ${
+             onScreen
+               ? "transition-opacity ease-in duration-700 opacity-100"
+               : "opacity-0"
+           }`}
           ref={ref}
         >
           <span
