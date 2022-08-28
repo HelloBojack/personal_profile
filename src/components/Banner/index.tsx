@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import headerImg from "../../assets/img/header-img.svg";
-// import "animate.css";
 import useOnScreen from "../../hooks/useOnScreen";
 
 export const Banner = () => {

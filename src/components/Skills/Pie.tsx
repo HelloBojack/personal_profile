@@ -10,7 +10,7 @@ export const Pie = ({
   className?: string;
 }) => {
   return (
-    <div className={`flex flex-col ${className}`}>
+    <div className={`flex flex-col items-center ${className}`}>
       <PieChart
         data={[{ value, color: "url(#gradient1)" }]}
         totalValue={100}

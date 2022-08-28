@@ -1,4 +1,5 @@
 import { Pie } from "./Pie";
+import Carousel, { Alignment } from "nuka-carousel";
 
 export const Skills = () => {
   return (
@@ -14,11 +15,25 @@ export const Skills = () => {
           text.
         </p>
       </div>
-      <div className="flex">
-        <Pie value={95} text="HTML" />
-        <Pie value={80} text="CSS" />
-        <Pie value={90} text="React" />
-        <Pie value={95} text="Vue" />
+      <div className="w-full">
+        <Carousel
+          adaptiveHeight={true}
+          withoutControls={true}
+          slidesToShow={6}
+          cellSpacing={80}
+          autoplay={true}
+          wrapAround={true}
+        >
+          <Pie value={95} text="HTML" />
+          <Pie value={80} text="CSS" />
+          <Pie value={90} text="React" />
+          <Pie value={95} text="Vue" />
+          <Pie value={90} text="React" />
+          <Pie value={95} text="Vue" />
+          <Pie value={95} text="Vue" />
+          <Pie value={90} text="React" />
+          <Pie value={95} text="Vue" />
+        </Carousel>
       </div>
     </section>
   );
