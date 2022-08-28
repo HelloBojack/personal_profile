@@ -23,7 +23,11 @@ export const Header = () => {
     setActiveLink(value);
   };
   return (
-    <nav className="py-[18px] fixed w-[100%] top-0 z-[999] transform ease-in duration-300">
+    <nav
+      className={`py-[18px] fixed w-[100%] top-0 z-[999] transform ease-in duration-300 ${
+        scrolled ? "py-0 bg-[#121212]" : ""
+      }`}
+    >
       <div className="container mx-auto flex items-center justify-between">
         <div>
           <a href="/">
@@ -33,19 +37,19 @@ export const Header = () => {
 
         <div>
           <a
-            href=""
+            href="#home"
             className="px-[25px] text-[18px] tracking-[0.8px] opacity-75 hover:opacity-100"
           >
             Home
           </a>
           <a
-            href=""
+            href="#skills"
             className="px-[25px] text-[18px] tracking-[0.8px] opacity-75 hover:opacity-100"
           >
             Skills
           </a>
           <a
-            href=""
+            href="#projects"
             className="px-[25px] text-[18px] tracking-[0.8px] opacity-75 hover:opacity-100"
           >
             Projects
