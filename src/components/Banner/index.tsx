@@ -78,7 +78,7 @@ export const Banner = () => {
             style={{
               background: `linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%) `,
             }}
-            className="inline-block bg-gradient-to-r from-pink-900 to-fuchsia-900 font-bold tracking-[0.8px] px-[8px] py-[10px] mb-[16px] text-[20px] border border-solid border-white/50"
+            className="inline-block font-bold tracking-[0.8px] px-[8px] py-[10px] mb-[16px] text-[20px] border border-solid border-white/50"
           >
             Welcome to my Profile
           </span>
