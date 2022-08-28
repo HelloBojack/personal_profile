@@ -14,11 +14,11 @@ export const Skills = () => {
           text.
         </p>
       </div>
-      <div className="flex ">
-        <Pie value={95} />
-        <Pie value={80} />
-        <Pie value={90} />
-        <Pie value={95} />
+      <div className="flex">
+        <Pie value={95} text="HTML" />
+        <Pie value={80} text="CSS" />
+        <Pie value={90} text="React" />
+        <Pie value={95} text="Vue" />
       </div>
     </section>
   );
