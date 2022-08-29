@@ -1,4 +1,41 @@
 import { TabPane, Tabs } from "../common/Tabs";
+import { Card } from "./Card";
+import projImg1 from "../../assets/img/project-img1.png";
+import projImg2 from "../../assets/img/project-img2.png";
+import projImg3 from "../../assets/img/project-img3.png";
+
+const projects = [
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg1,
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg2,
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg3,
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg1,
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg2,
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg3,
+  },
+];
 
 export const Project = () => {
   return (
@@ -17,11 +54,29 @@ export const Project = () => {
         <div>
           <Tabs
             defaultActiveKey="1"
-            tabClassName="first-of-type:rounded-l-full last-of-type:rounded-r-full  before:transition-all before:duration-300 before:absolute before:w-0 before:h-[100%] before:top-0 before:left-0 before:content-['']"
-            ActiveClassName="before:bg-gradient-to-r  before:from-pink/50  before:to-purple/50 before:w-full first-of-type:before:rounded-l-full last-of-type:before:rounded-r-full "
+            tabClassName="first-of-type:rounded-l-full last-of-type:rounded-r-full  before:transition-all before:duration-300 before:absolute before:w-0 before:h-[100%] before:top-0 before:left-0 before:content-[''] before:bg-gradient-to-r  before:from-pink  before:to-purple first-of-type:before:rounded-l-full last-of-type:before:rounded-r-full"
+            ActiveClassName="before:w-full"
           >
             <TabPane tab="Tab 1" key="1">
-              Content of Tab Pane 1
+              <div className="grid grid-cols-3 gap-6">
+                {projects.map((project, index) => {
+                  return (
+                    <Card
+                      key={index}
+                      {...project}
+                      className="
+                      group
+                      before:rounded-[30px]
+                      before:transition-all before:duration-300 
+                      before:absolute relative
+                      before:w-full before:h-0 before:top-0 before:left-0 before:content-[''] 
+                      before:bg-gradient-to-b  before:from-pink/75  before:to-purple/75
+                      hover:before:h-full"
+                      innerClassName="group-hover:top-[45%] group-hover:opacity-100"
+                    />
+                  );
+                })}
+              </div>
             </TabPane>
             <TabPane tab="Tab 2" key="2">
               Content of Tab Pane 2
