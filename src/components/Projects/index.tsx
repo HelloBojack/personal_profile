@@ -13,17 +13,24 @@ export const Project = () => {
             and scrambled it to make a type specimen book.
           </p>
         </div>
-        <Tabs defaultActiveKey="1">
-          <TabPane tab="Tab 1" key="1">
-            Content of Tab Pane 1
-          </TabPane>
-          <TabPane tab="Tab 2" key="2">
-            Content of Tab Pane 2
-          </TabPane>
-          <TabPane tab="Tab 3" key="3">
-            Content of Tab Pane 3
-          </TabPane>
-        </Tabs>
+
+        <div>
+          <Tabs
+            defaultActiveKey="1"
+            tabClassName="first-of-type:rounded-l-full last-of-type:rounded-r-full  before:transition-all before:duration-300 before:absolute before:w-0 before:h-[100%] before:top-0 before:left-0 before:content-['']"
+            ActiveClassName="before:bg-gradient-to-r  before:from-pink/50  before:to-purple/50 before:w-full first-of-type:before:rounded-l-full last-of-type:before:rounded-r-full "
+          >
+            <TabPane tab="Tab 1" key="1">
+              Content of Tab Pane 1
+            </TabPane>
+            <TabPane tab="Tab 2" key="2">
+              Content of Tab Pane 2
+            </TabPane>
+            <TabPane tab="Tab 3" key="3">
+              Content of Tab Pane 3
+            </TabPane>
+          </Tabs>
+        </div>
       </div>
     </section>
   );

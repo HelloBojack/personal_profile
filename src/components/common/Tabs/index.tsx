@@ -2,9 +2,11 @@ import { useState } from "react";
 
 export const Tabs = ({
   defaultActiveKey,
+  tabClassName,
   ActiveClassName = "bg-[#39A2DB]",
   children,
 }: {
+  tabClassName?: string;
   ActiveClassName?: string;
   defaultActiveKey: string;
   children: React.ReactElement[];
@@ -14,20 +16,18 @@ export const Tabs = ({
   );
   const renderChildren = children.find((item) => item.key === activeKey);
 
-  console.log(children);
-
   return (
     <>
       <ul className="flex items-center justify-center w-[72%] mx-auto ">
         {children.map((item) => (
           <li
-            className={`border flex-1 py-[17px] text-[18px] tracking-[0.8px]  ${
-              activeKey === item?.key ? ActiveClassName : ""
-            }`}
+            className={`border flex-1 py-[17px] text-[18px] tracking-[0.8px] relative
+            ${tabClassName}
+            ${activeKey === item?.key ? ActiveClassName : ""}`}
             onClick={() => setActiveKey(item.key)}
             key={item.key}
           >
-            <button>{item?.props.tab}</button>
+            <button className="relative">{item?.props.tab}</button>
           </li>
         ))}
       </ul>
