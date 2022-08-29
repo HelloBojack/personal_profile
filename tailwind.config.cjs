@@ -2,6 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    colors: {
+      pink: "rgb(170, 54, 124)",
+      purple: " rgb(74, 47, 189)",
+      black: "#000",
+      white: "#fff",
+    },
     extend: {
       animation: {
         updown: "updown 3s linear infinite",

@@ -72,12 +72,7 @@ export const Banner = () => {
            }`}
           ref={ref}
         >
-          <span
-            style={{
-              background: `linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%) `,
-            }}
-            className="inline-block font-bold tracking-[0.8px] px-[8px] py-[10px] mb-[16px] text-[20px] border border-solid border-white/50"
-          >
+          <span className="bg-gradient-to-r from-pink/50 to-purple/50 inline-block font-bold tracking-[0.8px] px-[8px] py-[10px] mb-[16px] text-[20px] border border-solid border-white/50">
             Welcome to my Profile
           </span>
           <h1 className="font-bold tracking-[0.8px] text-[64px] mb-[20px] block leading-none">
