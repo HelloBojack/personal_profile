@@ -9,31 +9,37 @@ const projects = [
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg1,
+    key: 1,
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg2,
+    key: 2,
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg3,
+    key: 3,
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg1,
+    key: 4,
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg2,
+    key: 5,
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg3,
+    key: 6,
   },
 ];
 
@@ -62,7 +68,6 @@ export const Project = () => {
                 {projects.map((project, index) => {
                   return (
                     <Card
-                      key={index}
                       {...project}
                       className="
                       group

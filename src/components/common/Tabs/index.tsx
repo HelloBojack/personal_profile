@@ -42,6 +42,6 @@ interface TabPaneProps {
   key: string;
 }
 
-export const TabPane = ({ children, tab, key }: TabPaneProps) => {
+export const TabPane = ({ children, tab }: TabPaneProps) => {
   return <>{children}</>;
 };
