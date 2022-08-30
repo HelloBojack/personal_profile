@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from "../../assets/img/logo.svg";
+import useCopyToClipboard from "../../hooks/useCopyToClipboard";
+import { ContactButton } from "./ContactButton";
 
 export const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -22,6 +24,8 @@ export const Header = () => {
   const onUpdateActiveLink = (value: string) => {
     setActiveLink(value);
   };
+
+  const [value, copy] = useCopyToClipboard();
   return (
     <nav
       className={`py-[18px] fixed w-[100%] top-0 z-[999] transform ease-in duration-300 ${
@@ -57,15 +61,11 @@ export const Header = () => {
         </div>
 
         <div>
-          <button
-            className="font-bold text-[18px] ml-[18px] border border-white px-[34px] py-[18px] bg-transparent relative
-            before:transition-all  before:duration-300 before:-z-[1]
-            before:absolute before:w-0 before:h-[100%] before:top-0 before:left-0 
-            before:content-[''] hover:before:w-full before:bg-white hover:text-black
-          "
-          >
-            <span className="z-[1]">Let's Connect</span>
-          </button>
+          <ContactButton onClick={() => copy("https://github.com/HelloBojack")}>
+            Github
+          </ContactButton>
+          <ContactButton>Mail</ContactButton>
+          <ContactButton>Wechat</ContactButton>
         </div>
       </div>
     </nav>
