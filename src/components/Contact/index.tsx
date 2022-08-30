@@ -8,12 +8,12 @@ export const Contact = () => {
 
   return (
     <div
-      id="connect"
-      className="w-full bg-gradient-to-r from-pink to-purple pt-[60px] pb-[200px]"
+      id="contact"
+      className="w-full bg-gradient-to-r from-pink to-purple pt-[60px] pb-[60px]"
     >
       <div className="container mx-auto flex">
         <div className={`flex-1 ${onScreen ? "animate-zoomin" : ""}`} ref={ref}>
-          <img src={ContactImg} alt="ContactImg" />
+          <img src={ContactImg} alt="ContactImg" className="animate-swing" />
         </div>
         <div className="flex-1"></div>
       </div>

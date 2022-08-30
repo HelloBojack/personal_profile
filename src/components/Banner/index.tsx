@@ -88,23 +88,25 @@ export const Banner = () => {
             onClick={() => console.log("connect")}
             className="font-bold text-[20px] mt-[60px] tracking-[0.8px] flex items-center"
           >
-            <span className="phrase hover:!bg-[length:100%_0.1em] transition-all duration-1000 mr-[10px] hover:mr-[20px]">
-              Let's Connect
+            <span className="group flex">
+              <span className="mr-[10px] group-hover:mr-[20px] transition-all duration-1000 phrase hover:!bg-[length:100%_0.1em] ">
+                Let's Connect
+              </span>
+              <svg
+                className="w-8 h-8 leading-none"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
             </span>
-            <svg
-              className="w-8 h-8 leading-none"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              ></path>
-            </svg>
           </button>
         </div>
 

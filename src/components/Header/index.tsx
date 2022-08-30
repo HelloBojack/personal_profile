@@ -60,12 +60,15 @@ export const Header = () => {
           </a>
         </div>
 
-        <div>
-          <ContactButton onClick={() => copy("https://github.com/HelloBojack")}>
-            Github
+        <div className="py-[10px]">
+          <ContactButton>
+            <a
+              href="#contact"
+              className="w-full h-full flex items-center justify-center"
+            >
+              Contact
+            </a>
           </ContactButton>
-          <ContactButton>Mail</ContactButton>
-          <ContactButton>Wechat</ContactButton>
         </div>
       </div>
     </nav>

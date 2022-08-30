@@ -12,6 +12,7 @@ module.exports = {
       animation: {
         updown: "updown 3s linear infinite",
         zoomin: "zoomin 0.5s linear",
+        swing: "swing 3s linear infinite",
       },
       keyframes: {
         updown: {
@@ -21,6 +22,10 @@ module.exports = {
         zoomin: {
           "0%": { opacity: 0, transform: "scale(0.3)" },
           "50%": { opacity: 1 },
+        },
+        swing: {
+          "0%,100%": { transform: "rotate(-8deg)" },
+          "50%": { transform: "rotate(8deg)" },
         },
       },
     },
